@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.yatrimitra.app-mergeDebugResources-43:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\8.9\\transforms\\d3e2b8d0679680184038af0fafacedfa\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

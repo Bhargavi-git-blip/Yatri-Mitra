@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_dot_blue.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/dot_blue.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_card_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/card_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/layout_activity_login.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_input_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/input_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_badge_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/badge_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/layout_activity_main.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/layout_activity_splash.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/layout_activity_register.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_arrow_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/arrow_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_spinner_to_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/spinner_to_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_spinner_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/spinner_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/menu_main_menu.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_spinner_from_bg.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/spinner_from_bg.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/drawable_dot_red.xml.flat",
+        "source": "com.yatrimitra.app-main-47:/drawable/dot_red.xml"
+    },
+    {
+        "merged": "com.yatrimitra.app-debug-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yatrimitra.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    }
+]

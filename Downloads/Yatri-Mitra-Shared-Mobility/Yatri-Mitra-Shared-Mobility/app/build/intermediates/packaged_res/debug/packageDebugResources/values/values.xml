@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#E65100</color>
+    <color name="colorPrimaryVariant">#BF360C</color>
+    <color name="colorSecondary">#FF8F00</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Yatri-Mitra</string>
+    <string name="gcm_defaultSenderId" translatable="false">859578365933</string>
+    <string name="google_api_key" translatable="false">AIzaSyCupDGlJhm_j3vqz9KBHyjljpoe3Ovd4V4</string>
+    <string name="google_app_id" translatable="false">1:859578365933:android:efd21740659350345919e4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCupDGlJhm_j3vqz9KBHyjljpoe3Ovd4V4</string>
+    <string name="google_storage_bucket" translatable="false">yatrimitra-ab4d5.firebasestorage.app</string>
+    <string name="project_id" translatable="false">yatrimitra-ab4d5</string>
+    <style name="Theme.YatriMitra" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#E65100</item>
+        <item name="colorPrimaryVariant">#BF360C</item>
+        <item name="colorSecondary">#FF8F00</item>
+        <item name="android:statusBarColor">#BF360C</item>
+    </style>
+    <style name="Theme.YatriMitra.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">#E65100</item>
+        <item name="android:statusBarColor">#E65100</item>
+    </style>
+</resources>

@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- ── Toolbar ── -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#E65100"
+        android:elevation="6dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🛺 Yatri-Mitra"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"/>
+
+            <TextView
+                android:id="@+id/tvBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◌ Paused"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/badge_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ── Greeting ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#BF360C"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvUserGreeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hello, Passenger 👋"
+            android:textSize="14sp"
+            android:textColor="#FFCCBC"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Tracker"
+            android:textSize="11sp"
+            android:textColor="#FF8A65"/>
+    </LinearLayout>
+
+    <!-- ── Scrollable body ── -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- ── From / To Card ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:layout_marginBottom="8dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT YOUR JOURNEY"
+                    android:textSize="11sp"
+                    android:textColor="#E65100"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:layout_marginBottom="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- From block -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="6dp">
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@drawable/dot_blue"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" FROM"
+                                android:textSize="11sp"
+                                android:textColor="#1565C0"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/fromSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/spinner_from_bg"
+                            android:paddingStart="10dp"/>
+                    </LinearLayout>
+
+                    <!-- Swap arrow -->
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/arrow_bg"
+                        android:layout_marginTop="18dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="→"
+                            android:textSize="16sp"
+                            android:textColor="#E65100"/>
+                    </LinearLayout>
+
+                    <!-- To block -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="6dp">
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@drawable/dot_red"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" TO"
+                                android:textSize="11sp"
+                                android:textColor="#C62828"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/toSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/spinner_to_bg"
+                            android:paddingStart="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ── Route Map Card ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="14dp"
+                    android:paddingBottom="0dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIVE ROUTE MAP"
+                        android:textSize="11sp"
+                        android:textColor="#E65100"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"/>
+                    <TextView
+                        android:id="@+id/tvJbDist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#757575"
+                        android:background="#F5F5F5"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"/>
+                </LinearLayout>
+
+                <!-- Journey from → to label -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:id="@+id/tvJbFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:textColor="#1565C0"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  ──────  "
+                        android:textSize="11sp"
+                        android:textColor="#BDBDBD"/>
+                    <TextView
+                        android:id="@+id/tvJbTo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:textColor="#C62828"
+                        android:textStyle="bold"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <!-- Canvas -->
+                <com.yatrimitra.app.ui.RouteCanvasView
+                    android:id="@+id/routeCanvas"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Route map"/>
+            </LinearLayout>
+
+            <!-- ── ETA + Ride Cards ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- ETA card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="3dp"
+                    android:padding="16dp"
+                    android:layout_marginEnd="6dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⏱"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Next Auto"
+                            android:textSize="11sp"
+                            android:textColor="#757575"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvEta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="—"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="#1B5E20"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ETA to your stop"
+                        android:textSize="10sp"
+                        android:textColor="#BDBDBD"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <!-- Ride Duration card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="3dp"
+                    android:padding="16dp"
+                    android:layout_marginStart="6dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🛣️"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/tvRideLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Ride Time"
+                            android:textSize="11sp"
+                            android:textColor="#757575"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvRide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="—"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="#E65100"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estimated journey"
+                        android:textSize="10sp"
+                        android:textColor="#BDBDBD"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ── Waiting countdown ── -->
+            <LinearLayout
+                android:id="@+id/waitSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFF8E1"
+                android:elevation="3dp"
+                android:padding="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛺  Auto has arrived at your stop!"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#F57F17"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressTint="#E65100"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tvWaitTimer"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:text="10s"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#E65100"
+                        android:gravity="center"
+                        android:fontFamily="monospace"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boarding window closing soon..."
+                    android:textSize="11sp"
+                    android:textColor="#FFA000"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+            <!-- ── OTP Section ── -->
+            <LinearLayout
+                android:id="@+id/otpSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="#1565C0"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🔔  Confirm Your Boarding"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTP"
+                        android:textSize="11sp"
+                        android:textColor="#90CAF9"
+                        android:background="#0D000000"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/tvOtpMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#424242"
+                        android:layout_marginBottom="14dp"
+                        android:lineSpacingExtra="3dp"/>
+
+                    <!-- OTP display -->
+                    <TextView
+                        android:id="@+id/tvOtpDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:text="----"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.4"
+                        android:gravity="center"
+                        android:textColor="#E65100"
+                        android:background="#FFF3E0"
+                        android:fontFamily="monospace"
+                        android:layout_marginBottom="14dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Show this code to the driver. Enter the code the driver reads aloud:"
+                        android:textSize="12sp"
+                        android:textColor="#757575"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etOtpInput"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:hint="Enter code"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="monospace"
+                            android:background="@drawable/input_bg"
+                            android:layout_marginEnd="10dp"/>
+
+                        <Button
+                            android:id="@+id/btnOtpConfirm"
+                            android:layout_width="120dp"
+                            android:layout_height="52dp"
+                            android:text="CONFIRM"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:backgroundTint="#1565C0"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvOtpError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="#C62828"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ── Status Bar ── -->
+            <TextView
+                android:id="@+id/statusBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="#E8F5E9"
+                android:textColor="#2E7D32"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <!-- ── Book hint ── -->
+            <TextView
+                android:id="@+id/bookHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅  Autos running freely — select stops above and tap Book Ride"
+                android:textSize="12sp"
+                android:textColor="#5D4037"
+                android:gravity="center"
+                android:background="#FFF8E1"
+                android:padding="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <!-- ── Trip Log ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:padding="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📋  TRIP HISTORY"
+                        android:textSize="11sp"
+                        android:textColor="#E65100"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"
+                        android:layout_weight="0.1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTripLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No trips yet — book your first ride!"
+                    android:textSize="13sp"
+                    android:textColor="#9E9E9E"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ── Bottom Control Bar (fixed) ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#FFFFFF"
+        android:elevation="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="▶ Start"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.2"
+            android:text="🎟  Book Ride"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAddAuto"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="+ Auto"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="↺"
+            android:textSize="18sp"
+            android:backgroundTint="#BF360C"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">859578365933</string>
+    <string name="google_api_key" translatable="false">AIzaSyCupDGlJhm_j3vqz9KBHyjljpoe3Ovd4V4</string>
+    <string name="google_app_id" translatable="false">1:859578365933:android:efd21740659350345919e4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCupDGlJhm_j3vqz9KBHyjljpoe3Ovd4V4</string>
+    <string name="google_storage_bucket" translatable="false">yatrimitra-ab4d5.firebasestorage.app</string>
+    <string name="project_id" translatable="false">yatrimitra-ab4d5</string>
+</resources>

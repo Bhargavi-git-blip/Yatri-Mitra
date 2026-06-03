@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.YatriMitra" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#E65100</item>
+        <item name="colorPrimaryVariant">#BF360C</item>
+        <item name="colorSecondary">#FF8F00</item>
+        <item name="android:statusBarColor">#BF360C</item>
+    </style>
+
+    <style name="Theme.YatriMitra.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">#E65100</item>
+        <item name="android:statusBarColor">#E65100</item>
+    </style>
+</resources>

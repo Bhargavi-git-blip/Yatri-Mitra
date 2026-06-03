@@ -1,0 +1,11 @@
+{
+  "name": "yatrimitra-backend",
+  "version": "1.0.0",
+  "description": "Yatri-Mitra auth backend — pure Node.js, no dependencies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": { "node": ">=14.0.0" }
+}

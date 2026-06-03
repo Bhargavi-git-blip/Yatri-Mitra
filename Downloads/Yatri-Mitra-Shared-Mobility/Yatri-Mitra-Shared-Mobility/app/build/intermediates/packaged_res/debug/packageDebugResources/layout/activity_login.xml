@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <!-- Orange top bar -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#E65100"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Logo emoji -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛺"
+            android:textSize="64sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yatri-Mitra"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Shared Auto Tracker"
+            android:textSize="13sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to your account"
+                android:textSize="13sp"
+                android:textColor="#9E9E9E"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textSize="12sp"
+                android:textColor="#5D4037"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/input_bg"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="12sp"
+                android:textColor="#5D4037"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:background="@drawable/input_bg"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Error box -->
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#C62828"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="#FFEBEE"
+                android:padding="12dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Progress -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="#E65100"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Login button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="LOGIN"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E65100"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="0.08"/>
+
+        </LinearLayout>
+
+        <!-- Register link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textSize="14sp"
+                android:textColor="#757575"/>
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
